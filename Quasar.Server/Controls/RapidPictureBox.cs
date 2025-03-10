@@ -69,6 +69,8 @@ namespace Quasar.Server.Controls
         /// </summary>
         private FrameCounter _frameCounter;
 
+        private BufferedGraphics _bufferedGraphics;
+
         /// <summary>
         /// Subscribes an Eventhandler to the FrameUpdated event.
         /// </summary>
@@ -161,13 +163,22 @@ namespace Quasar.Server.Controls
             }
         }
 
+        protected override void OnPaintBackground(PaintEventArgs pe) { }
+
         protected override void OnPaint(PaintEventArgs pe)
         {
             lock (_imageLock)
             {
                 if (GetImageSafe != null)
                 {
-                    pe.Graphics.DrawImage(GetImageSafe, Location);
+                var image = GetImageSafe;
+
+                if (image != null)
+                {
+                    Graphics g = _bufferedGraphics.Graphics;
+                    g.DrawImage(image, Location);
+                    _bufferedGraphics.Render(pe.Graphics);
+                    //pe.Graphics.DrawImage(GetImageSafe, Location);
                 }
             }
         }
@@ -176,6 +187,11 @@ namespace Quasar.Server.Controls
         {
             ScreenWidth = newWidth;
             ScreenHeight = newHeight;
+
+            using (Graphics graphics = CreateGraphics())
+            {
+                _bufferedGraphics = BufferedGraphicsManager.Current.Allocate(graphics, new Rectangle(0, 0, ScreenWidth, ScreenHeight));
+            }
         }
 
         private void CountFps()
