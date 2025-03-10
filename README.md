@@ -26,8 +26,8 @@ Please check out the Quasar [Getting Started](https://github.com/quasar/Quasar/w
 * ... and many more!
 
 ## Download
-* [Latest stable release](https://github.com/quasar/Quasar/releases) (recommended)
-* [Latest development snapshot](https://ci.appveyor.com/project/MaxXor/quasar)
+*  If you want to use Sikura, you gonna have to compile it yourself.
+*  Go to Compiling, and Building a client if you really want to compile Sikura.
 
 ## Supported runtimes and operating systems
 * .NET Framework 4.8 or higher
