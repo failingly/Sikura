@@ -312,7 +312,7 @@
       <Version>3.2.16</Version>
     </PackageReference>
     <PackageReference Include="Vestris.ResourceLib">
-        <Version>3.2.16</Version>
+         <Version>2.1.0</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup />
