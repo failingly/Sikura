@@ -53,7 +53,7 @@ Open the project `Quasar.sln` in Visual Studio 2019+ with installed .NET desktop
 | Release configuration       | Production     | Start `Quasar.exe` and use the client builder.
 
 ## Roadmap
-See [ROADMAP.md](ROADMAP.md)
+See the Quasar [ROADMAP.md](ROADMAP.md)
 
 ## Documentation
 See the Quasar [wiki](https://github.com/quasar/Quasar/wiki) for usage instructions and other documentation.
