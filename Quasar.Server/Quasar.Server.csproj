@@ -43,7 +43,7 @@
     <Compile Update="Controls\Line.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Controls\RapidPictureBox.cs">
+    <Compile Update="Controls\RapidPictureBox.cs" />
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="Controls\RegistryTreeView.cs">
@@ -312,7 +312,7 @@
       <Version>2.4.8</Version>
     </PackageReference>
     <PackageReference Include="Vestris.ResourceLib">
-      <Version>2.1.0</Version>
+        <Version>3.2.16</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup />
