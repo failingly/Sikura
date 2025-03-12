@@ -30,7 +30,7 @@ Please check out the Quasar [Getting Started](https://github.com/quasar/Quasar/w
 *  Go to Compiling, and Building a client if you really want to compile Sikura.
 
 ## Supported runtimes and operating systems
-* .NET Framework 4.8 or higher
+* .NET Framework 4.5.2 or higher
 * Supported operating systems (32- and 64-bit)
   * Windows 11
   * Windows Server 2022
