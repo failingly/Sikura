@@ -1,6 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net452</TargetFramework>
     <OutputType>WinExe</OutputType>
     <AssemblyName>Quasar</AssemblyName>
     <UseWindowsForms>true</UseWindowsForms>
@@ -43,7 +43,7 @@
     <Compile Update="Controls\Line.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Controls\RapidPictureBox.cs" />
+    <Compile Update="Controls\RapidPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="Controls\RegistryTreeView.cs">
@@ -301,18 +301,18 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Mono.Cecil">
-      <Version>0.11.4</Version>
+      <Version>0.11.2</Version>
     </PackageReference>
     <PackageReference Include="MouseKeyHook">
       <Version>5.6.0</Version>
     </PackageReference>
     <PackageReference Include="Open.Nat" Version="2.1.0" />
-    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.8" />
     <PackageReference Include="protobuf-net">
-      <Version>3.2.16</Version>
+      <Version>2.4.6</Version>
     </PackageReference>
     <PackageReference Include="Vestris.ResourceLib">
-         <Version>2.1.0</Version>
+      <Version>2.1.0</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup />
